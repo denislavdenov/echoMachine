@@ -2,7 +2,9 @@
 our echo system, dev to prod with CI/CD
 
 ## FEATURES
-
-- CI
+- `hello.sh` should say hello, and ideally something nice.
 - DEV
 - PROD
+
+## DONE
+- CI
