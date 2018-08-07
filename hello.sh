@@ -2,7 +2,7 @@
 
 # implement the function
 function hello(){
-  echo ${1}
+  echo "Hello ${1}, welcome to the echoMachinator! Have a nice day!"
 }
 
 # use the function
