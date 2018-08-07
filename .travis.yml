@@ -1,3 +1,11 @@
 language: python
 script:
-  - bash -x test.sh
+- bash -x test.sh
+deploy:
+  provider: releases
+  api_key:
+    secure: A+Q2BDrOjrnYs7LBWiOzdSjc19NBFBMfrgH2sBMlSFPxuELQjWoSC8jaeyzmSz9/W6MXQ4rzPuDoIeZt+LvrMS1hEls8BLXw7nllNQOT2Yp4TwFysko+axRjFAwY/KHJforYTYMG8KiDYmLJ8ZX1Tm1EG6tYv/GPd9nNiXe/nAflQtWNY/8wtYg/sT16Zv+QlpbVJnhkgSnPJLCl9fhFZAdJ3jtz97nHLs6Mnw9/JHGHEyVrvcWEj92rzEE3UuwlkgtC+Yxrb6Q5XWAO6MbvLfdRiD2mDVFooWH9N1jh3Uc1yL43ao+1RwC2wSBHHf6cl2eQl+sua17ZrWiInGLz5/7+5ge87M1vSKiwN8MLU+T00yG2yQgB3sTiaAhwrnxdewjIOwtzOW0FcBdHMaLKk6lcw0gKbg5xF5lCe/QQ01Wqs3LgdaiShGWulhFIJW9f4hDnq+O8YG6SI7RbEaCvSluNk4f2lT5xnxJsoxOv69XoVY8hVK90+DfvV4pyr2CsOk644kkALEFkPQLwc/CgJEHfNg+w6BBKNc3VrIS78cBonKQeCD2Y8rcPq3QDm4y+WuS9/h8gZAP9ovakRr6h1ApkG3G8lGEwhjgOkRxcY2zIEYb4M0O9cYHwAgxwIbjzgLqt1WmO3f5xZs6FcGreSea3A6eulQin5dHFjN4SdCg=
+  file: hello.sh
+  on:
+    repo: kikitux/echoMachine
+    tags: true
