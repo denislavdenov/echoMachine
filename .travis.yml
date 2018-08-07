@@ -1,3 +1,5 @@
 language: python
+install:
+  - bash -x ops/scripts/provision.sh
 script:
   - bash -x test.sh
